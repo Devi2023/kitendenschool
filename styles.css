@@ -1,0 +1,53 @@
+:root {
+  --bg: #f6f3ee;       /* milky background */
+  --brand: #1f3a93;
+  --bg-dark: #0b2547;
+}
+html, body { height: 100%; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; background: var(--bg); color:#111; }
+
+/* Shared header/footer styling */
+.navbar-custom { background: linear-gradient(135deg, #1b4f72 0%, #0b3a63 60%, #0b2547 100%); }
+.nav-link { color: #0ba5f2; font-size: 1.05rem; }
+
+/* HERO FULL-HEIGHT FIX */
+.hero {
+  height: 80vh;              /* full hero height */
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make carousel fill hero */
+.hero .carousel,
+.hero .carousel-inner,
+.hero .carousel-item {
+  height: 100%;
+}
+
+/* Make images cover entire section */
+.hero .carousel-item {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Overlay */
+.hero .overlay {
+  background: rgba(0,0,0,0.25);
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Project cards hover */
+.project-card { transition: transform .25s ease, box-shadow .25s ease; }
+.project-card:hover { transform: translateY(-6px); box-shadow: 0 14px 28px rgba(0,0,0,.15); }
+
+/* Donor logos spacing in footer */
+.donors-logos img { height: 40px; }
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .nav-link { font-size: 1.0rem; padding: .75rem 1rem; }
+}

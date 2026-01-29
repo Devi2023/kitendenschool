@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maasai Village Primary - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header with Logo -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <!-- Logo: Maasai shield + book (inline SVG) -->
+        <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+          <path d="M32 6l14 8v16l-14 8-14-8V14L32 6z" fill="#0d6efd"/>
+          <rect x="26" y="14" width="12" height="20" rx="2" fill="#f5f5f5"/>
+          <path d="M28 42h8v12h-8z" fill="#1a1a1a"/>
+        </svg>
+        ERETETO PRIMARY SCHOOL
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="mission.html">Mission & Vision</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero: full height carousel -->
+<section class="hero text-white">
+  <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+    <div class="carousel-inner h-100">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active" 
+           style="background-image:url('images/IMG-20251010-WA0002.jpg');">
+        <div class="overlay d-flex align-items-center">
+          <div class="container">
+            <div class="col-md-6">
+              <h1 class="display-4 fw-bold">Educating Futures in Maasai Village</h1>
+              <p class="lead">Books, uniforms, and opportunities for every child.</p>
+              <!--<a href="donate.html" class="btn btn-light btn-lg me-2"><i class="fas fa-donate"></i> Donate Now</a>
+              <a href="projects.html" class="btn btn-outline-light btn-lg"><i class="fas fa-project-diagram"></i> Projects</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" 
+           style="background-image:url('images/IMG-20251010-WA0003.jpg');">
+        <div class="overlay d-flex align-items-center">
+          <div class="container">
+            <div class="col-md-6">
+              <h1 class="display-4 fw-bold">Support Learning</h1>
+              <p class="lead">Your gift helps classrooms, libraries, and teachers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" 
+           style="background-image:url('images/IMG-20251010-WA0002.jpg');">
+        <div class="overlay d-flex align-items-center">
+          <div class="container">
+            <div class="col-md-6">
+              <h1 class="display-4 fw-bold">Grow with Community</h1>
+              <p class="lead">A brighter future starts with education and hope.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+  <!-- Quick stats -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">MAASAI CULTURE</h3>
+              <p class="card-text mb-0">The Maasai are an Indigenous community from northern Tanzania and southern Kenya, well known for their strong traditions and pastoral lifestyle. They are semi-nomadic people who depend mainly on cattle, which symbolize wealth, identity, and community strength.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">MAASAI TRADITIONS</h3>
+              <p class="card-text mb-0">Maasai communities live in traditional homesteads called bomas and communicate in the Maa language, along with Swahili and English.
+Their dress is iconic men wear colorful shúkà cloth, while women create and wear beautiful beaded jewelry with meaningful patterns. Cultural life is shaped by age-set systems, ceremonies, and oral storytelling that preserve history and values across generations.
+</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title" id="donated-total">MAASAI BELIEVES</h3>
+              <p class="card-text mb-0">The Maasai believe in Enkai, their supreme God, and maintain a close spiritual relationship with nature. Today, many Maasai combine traditional herding with modern education, business, and conservation roles.
+Overall, the Maasai culture is admired for its hospitality, unity, respect, and strong cultural pride.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects preview with hover images -->
+  <section id="projects" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="mb-4 text-center">Current Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 project-card" style="cursor:pointer" onclick="location.href='project-detail.html#classrooms'">
+            <img src="images/michael-muli-E6vPCx7W9HQ-unsplash.jpg" class="card-img-top" alt="Classrooms">
+            <div class="card-body">
+              <h5 class="card-title">Constructions & Classrooms</h5>
+              <p class="card-text">Safe spaces for learning and storage.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 project-card" style="cursor:pointer" onclick="location.href='project-detail.html#libraries'">
+            <img src="images/jan-canty-cpxoLPWizmY-unsplash.jpg" class="card-img-top" alt="Libraries">
+            <div class="card-body">
+              <h5 class="card-title">Libraries & Reading Rooms</h5>
+              <p class="card-text">Expanding access to books and resources.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 project-card" style="cursor:pointer" onclick="location.href='project-detail.html#train'">
+            <img src="images/sneha-cecil-uDL7x5SU9bw-unsplash.jpg" class="card-img-top" alt="Teacher Training">
+            <div class="card-body">
+              <h5 class="card-title">Teacher Training</h5>
+              <p class="card-text">Ongoing professional development for staff.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="donate.html" class="btn btn-primary"><i class="fas fa-donate"></i> Support a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery CTA and Donors in Footer -->
+  <section class="py-4 text-center bg-light" id="gallery-cta">
+    <div class="container">
+      <a href="gallery.html" class="btn btn-outline-primary btn-lg"><i class="fas fa-image"></i> View Gallery</a>
+    </div>
+  </section>
+
+  <footer class="pt-4 pb-3 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-6">© 2025 Maasai Village Primary. All rights reserved.</div>
+        <div class="col-md-6 text-md-end donors-logos">
+          <img src="images/img10.jpg" alt="Donor 1" class="mx-2" />
+          <img src="images/img10.jpg" alt="Donor 2" class="mx-2" />
+          <img src="images/img10.jpg" alt="Donor 3" class="mx-2" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
